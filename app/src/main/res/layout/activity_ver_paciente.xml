@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/activity_toolbar3">
+
+    </include>
+    <LinearLayout
+        android:padding="@dimen/paddin_prod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/nombre_prod_view_txt"
+            android:textStyle="bold"
+            android:textSize="@dimen/tamanio_titulo_app"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+        </TextView>
+        <ImageView
+            android:layout_marginTop="@dimen/margin_top_prod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imagen_prod_view">
+        </ImageView>
+        <TextView
+            android:id="@+id/desc_prod_wiew_tv"
+            android:textSize="@dimen/tamanio_desc_prod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:textSize="@dimen/tamanio_titulo_app"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <TextView
+                android:layout_weight="1"
+                android:textColor="@color/divider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/precio_prod_view_tx">
+            </TextView>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
